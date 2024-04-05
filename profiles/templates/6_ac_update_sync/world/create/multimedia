@@ -1,6 +1,6 @@
 # Calculate format=world name=world
 
-#?in(os_linux_pkglist, CLDGAA)!=#
+#?in(os_linux_pkglist, CLDGA)!=#
 media-plugins/alsa-plugins
 media-sound/alsa-utils
 media-sound/bluez-alsa
