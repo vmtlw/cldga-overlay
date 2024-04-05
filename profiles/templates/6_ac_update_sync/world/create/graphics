@@ -1,10 +1,6 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDGA)!=#
-sys-firmware/nvidia-firmware
-#in#
-
-#?in(os_linux_pkglist, CLDGA)!=#
 media-gfx/imagemagick
 #in#
 

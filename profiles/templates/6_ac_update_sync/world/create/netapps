@@ -2,21 +2,10 @@
 
 #?in(os_linux_pkglist, CLDGA)!=#
 app-text/wgetpaste
-net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/bind-tools
 net-misc/ntp
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLDGA)!=#
-www-client/firefox
-#in#
-
-#?in(os_linux_pkglist, CLDGA)!=#
-net-im/gajim
-net-misc/remmina
-net-p2p/transmission
-x11-misc/x11vnc
-#in#
 

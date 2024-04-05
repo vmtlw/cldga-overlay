@@ -1,23 +1,5 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDGA)!=#
-net-print/cndrvcups-common-lb
-net-print/cnijfilter2
 net-print/cups
-net-print/epson-inkjet-printer-escpr
-net-print/foomatic-db-engine
-net-print/gutenprint
-net-print/hplip
-net-print/hplip-plugin
-net-print/pantum
-net-print/rastertospl
-#in#
-
-#?in(os_linux_pkglist, CLDGA)!=#
-app-admin/system-config-printer
-#in#
-
-
-#?in(os_linux_pkglist, CLDGA)!=#
-media-gfx/simple-scan
 #in#
