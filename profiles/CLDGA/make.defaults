@@ -11,4 +11,4 @@ USE="${USE} tracker"
 
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude gnome-base/gnome-control-center"
 
-THEMES="CLDG"
+THEMES="CLDGA"
