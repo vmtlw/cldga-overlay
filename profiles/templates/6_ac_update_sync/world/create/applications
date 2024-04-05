@@ -1,0 +1,13 @@
+# Calculate format=world name=world
+
+#?in(os_linux_pkglist, CLDGAAA)!=#
+app-office/libreoffice
+#in#
+
+#?in(os_linux_pkglist, CLDGAAA)!=#
+app-text/fbreader
+#in#
+
+#?in(os_linux_pkglist, CLDGAAA)!=#
+sys-apps/flatpak
+#in#

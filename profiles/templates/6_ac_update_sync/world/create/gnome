@@ -1,0 +1,83 @@
+# Calculate format=world name=world
+
+#?in(os_linux_pkglist, CLDGA)!=#
+# core-libs
+gnome-base/gnome-core-libs
+
+# core-apps
+gnome-base/gnome-session
+gnome-base/gnome-settings-daemon
+gnome-base/gnome-control-center
+gnome-extra/gnome-color-manager
+
+app-crypt/gcr
+gnome-base/nautilus
+gnome-base/gnome-keyring
+gnome-extra/evolution-data-server
+
+app-crypt/seahorse
+app-editors/gnome-text-editor
+app-text/evince
+gnome-extra/gnome-contacts
+media-gfx/eog
+media-video/totem
+x11-terms/gnome-terminal
+
+gnome-extra/gnome-user-docs
+gnome-extra/yelp
+
+x11-themes/adwaita-icon-theme
+
+net-wireless/gnome-bluetooth
+
+# core
+gnome-base/gdm
+
+x11-wm/mutter
+gnome-base/gnome-shell
+media-fonts/cantarell
+
+x11-themes/gnome-backgrounds
+x11-themes/sound-theme-freedesktop
+
+gnome-extra/gnome-shell-extensions
+
+# extra-apps
+sys-apps/baobab
+media-video/cheese
+www-client/epiphany
+app-arch/file-roller
+gnome-extra/gnome-calculator
+gnome-extra/gnome-calendar
+gnome-extra/gnome-characters
+sys-apps/gnome-disk-utility
+media-gfx/gnome-font-viewer
+media-gfx/gnome-screenshot
+gnome-extra/gnome-system-monitor
+gnome-extra/gnome-weather
+gnome-extra/gucharmap
+gnome-extra/sushi
+media-sound/sound-juicer
+
+gnome-base/dconf-editor
+app-dicts/gnome-dictionary
+mail-client/evolution
+gnome-extra/gnome-tweaks
+gnome-extra/nautilus-sendto
+
+gnome-extra/gnome-user-share
+media-gfx/shotwell
+
+app-misc/tracker
+app-misc/tracker-miners
+media-sound/gnome-music
+
+net-irc/polari
+
+# extensions
+gnome-extra/gnome-browser-connector
+gnome-extra/gnome-shell-extension-appindicator
+gnome-extra/gnome-shell-extension-dash-to-dock
+gnome-extra/gnome-shell-extension-desktop-icons-ng
+gnome-extra/gnome-shell-extension-legacy-theme-auto-switcher
+#in#

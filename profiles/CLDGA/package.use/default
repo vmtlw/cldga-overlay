@@ -1,0 +1,25 @@
+# For eautoreconf in =app-crypt/seahorse-3.10.2-r1
+app-crypt/gcr vala
+
+# Don't force users to enable gd on PHP due to desktop defaults
+dev-lang/php -exif -truetype
+
+# Python Imaging Library (fork) 
+dev-python/pillow xcb
+
+# Enable luajit for OSC and youtube-dl support by default.
+# Override default +sdl from desktop profile and disable sdl outputs.
+# These outputs are for systems without a proper audio/video support.
+media-video/mpv lua -sdl
+media-video/mpv -lua_single_target_lua5-1
+media-video/mpv lua_single_target_luajit
+
+# Transmission
+net-p2p/transmission gtk -qt5
+
+# Enable pam_gnome_keyring.so module
+sys-auth/pambase gnome-keyring
+
+# gnome-terminal
+x11-terms/gnome-terminal gnome-shell
+

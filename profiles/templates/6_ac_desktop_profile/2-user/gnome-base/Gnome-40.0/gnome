@@ -1,0 +1,161 @@
+# Calculate format=dconf dconf=/org
+
+[gnome/TextEditor]
+restore-session=false
+show-line-numbers=true
+spellcheck=false
+use-system-font=true
+
+[gnome/desktop/app-folders]
+folder-children=['Accessories', 'Graphics', 'Internet', 'Multimedia', 'Office', 'Settings', 'System', 'Utilities']
+
+[gnome/desktop/app-folders/folders/Accessories]
+categories=['Utility']
+name='Utility.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Graphics]
+categories=['Graphics']
+name='Graphics.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Internet]
+categories=['Network']
+name='Network.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Multimedia]
+categories=['AudioVideo']
+name='AudioVideo.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Office]
+categories=['Office']
+name='Office.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Settings]
+categories=['Settings']
+name='Settings.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/System]
+categories=['System']
+name='System-Tools.directory'
+translate=true
+
+[gnome/desktop/app-folders/folders/Utilities]
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[gnome/desktop/background]
+#?ini(profile.appearance-wallpaper)!=#
+picture-uri='file://#-ini(profile.appearance-wallpaper)-#'
+#!ini#
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
+#?ini(profile.appearance-wallpaper-dark)!=#
+picture-uri-dark='file://#-ini(profile.appearance-wallpaper-dark)-#'
+#!ini#
+picture-uri-dark='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
+
+[gnome/desktop/input-sources]
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+xkb-options=['grp:alt_shift_toggle']
+
+[gnome/desktop/interface]
+#?ini(profile.appearance-cursor)!=#
+cursor-theme='#-ini(profile.appearance-cursor)-#'
+#ini#
+document-font-name='Droid Sans #-ini(profile.font-size)-#'
+font-name='Droid Sans #-ini(profile.font-size)-#'
+#?ini(profile.appearance-style)!=#
+gtk-theme='#-ini(profile.appearance-style)-#'
+#!ini#
+gtk-theme='Adwaita'
+#ini#
+#?ini(profile.appearance-icons)!=#
+icon-theme='#-ini(profile.appearance-icons)-#'
+#!ini#
+icon-theme='Adwaita'
+#ini#
+monospace-font-name='Droid Sans Mono Slashed #-ini(profile.font-size)-#'
+#?cl_ver>=3.6.8.8&&install.cl_install_dpi!=#
+#-sum(dpi,,#-install.cl_install_dpi-#)-#
+text-scaling-factor=#-sum(dpii,dpi/96)-#.#-sum(dpid,dpi*1000/96-dpii*1000)-#
+#cl_ver#
+
+[gnome/desktop/peripherals/keyboard]
+delay=uint32 #-ini(profile.keyboard-delay)-#
+repeat-interval=uint32 #-ini(profile.keyboard-rate)-#
+
+[gnome/desktop/peripherals/mouse]
+double-click=#-ini(profile.mouse-doubleclick-delayed)-#
+#?ini(profile.mouse-lefthanded)==on#
+left-handed=true
+#ini#
+
+[gnome/desktop/screensaver]
+#?os_root_type==livecd#
+lock-enabled=false
+#!os_root_type#
+lock-enabled=true
+#os_root_type#
+#?ini(profile.appearance-screensaver)!=#
+picture-uri='#-ini(profile.appearance-screensaver)-#'
+#!ini#
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
+
+[gnome/desktop/session]
+idle-delay=uint32 900
+
+[gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+titlebar-font='Droid Sans Bold #-ini(profile.font-size)-#'
+
+[gnome/nautilus/preferences]
+click-policy='#-ini(profile.mouse-clickpolicy)-#'
+
+[gnome/settings-daemon/plugins/power]
+power-button-action='suspend'
+#?ini(profile.power-ac-type)==on#
+sleep-inactive-ac-type='suspend'
+sleep-inactive-ac-timeout=#-sum(sleep,60*#-ini(profile.power-display-sleep)-#)-#
+#!ini#
+sleep-inactive-ac-type='nothing'
+#ini#
+#?ini(profile.power-battery-type)==on#
+sleep-inactive-battery-type='suspend'
+sleep-inactive-battery-timeout=#-sum(sleep,60*#-ini(profile.power-display-sleep)-#)-#
+#!ini#
+sleep-inactive-battery-type='nothing'
+#ini#
+
+[gnome/shell]
+app-picker-layout=[{'Multimedia': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
+disable-user-extensions=false
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'legacyschemeautoswitcher@joshimukul29.gmail.com']
+favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
+
+[gnome/shell/extensions/dash-to-dock]
+click-action='focus-or-appspread'
+custom-theme-shrink=true
+dash-max-icon-size=42
+disable-overview-on-startup=true
+running-indicator-style='BINARY'
+transparency-mode='DYNAMIC'
+
+[gnome/shell/extensions/ding]
+show-home=false
+show-trash=false
+show-volumes=false
+
+[gnome/terminal/legacy]
+theme-variant='system'
+
+[gnome/tweaks]
+show-extensions-notice=false
+
