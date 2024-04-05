@@ -9,57 +9,30 @@ gnome-base/gnome-session
 gnome-base/gnome-settings-daemon
 gnome-base/gnome-control-center
 gnome-extra/gnome-color-manager
-
-app-crypt/gcr
 gnome-base/nautilus
-gnome-base/gnome-keyring
-gnome-extra/evolution-data-server
-
-app-crypt/seahorse
 app-editors/gnome-text-editor
-app-text/evince
-media-gfx/eog
 x11-terms/gnome-terminal
-
-gnome-extra/yelp
-
 x11-themes/adwaita-icon-theme
-
 net-wireless/gnome-bluetooth
 
 # core
 gnome-base/gdm
-
 x11-wm/mutter
 gnome-base/gnome-shell
 media-fonts/cantarell
-
 x11-themes/gnome-backgrounds
-x11-themes/sound-theme-freedesktop
-
 gnome-extra/gnome-shell-extensions
 
 # extra-apps
 app-arch/file-roller
-media-gfx/gnome-font-viewer
 media-gfx/gnome-screenshot
-gnome-extra/gucharmap
-gnome-extra/sushi
-media-sound/sound-juicer
-
-gnome-base/dconf-editor
 app-dicts/gnome-dictionary
 gnome-extra/gnome-tweaks
 gnome-extra/nautilus-sendto
-
 gnome-extra/gnome-user-share
 media-gfx/shotwell
 
-media-sound/gnome-music
-
-
 # extensions
-gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extension-appindicator
 gnome-extra/gnome-shell-extension-dash-to-dock
 gnome-extra/gnome-shell-extension-desktop-icons-ng

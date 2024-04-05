@@ -7,7 +7,6 @@ USE="${USE} gnome"
 USE="${USE} gnome-online-accounts"
 USE="${USE} gstreamer"
 USE="${USE} nautilus"
-USE="${USE} tracker"
 
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude gnome-base/gnome-control-center"
 
